@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Slabo 13px', serif;
+}
+.header{
+    display: flex;
+    background-color: #fbebd9;
+    justify-content: space-between;
+  
+}
+
+.logo {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+
+}
+
+.logo img {
+    display: inline-block;
+    padding: 0 .2rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.logo h1{color: #000;}
+.nav{
+    
+    padding: 0 .9rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav{
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all .5s ease;
+    z-index: 100;
+}
+.nav.active{
+    background-color: #f1e3d1;
+}
+.nav.active .logo,
+.nav.active a {
+    color: #000;
+}
+.nav.active a:hover {
+    background: #FFF;
+    color: #000;
+}
+.logo{
+    color: #000;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 2rem;
+    list-style: none;
+}
+.menu li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #F2DDC1;
+    color: #000;
+    border-radius: 6rem;
+}
+
+.scroll{
+    height: 3rem;
+}
+
+
+
+body {
+    background: #FFF;
+    background: radial-gradient(circle,#DEB6AB, #FFF);
+    
+}
+.container{ 
+    margin-top: 4rem;
+    padding: 2rem;
+    min-height: 100vh;
+    background-image: linear-gradient(90deg,#ccdbde6f, #eae1ec6b),url(../img/foto_de_perfil.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-bottom: -25rem;
+    
+}
+.container__card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -25rem;
+}
+.container1 .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.card img{
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 1.5rem; 
+   
+}
+
+
+.container1 .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container1 .card img{
+    width: 330px;
+    height: 220px;
+}
+.container1 .card h3{
+    font-weight: 600;
+}
+.container1 .card p{
+    padding: .5rem 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container1 .precio {
+    width: 330px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.438);
+    transform: translateY(45rem) ; 
+    transition: all .5s ease; 
+} 
+.container1 .card:hover .precio {
+    transform: translateY(-28rem); 
+    display: block;
+}
+
+.container1 .card  .precio__item {
+    line-height: 650px; 
+    font-size: 2rem;
+    color: #FFF;
+}
+.img{
+    object-fit:cover;
+    height: 500px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Slabo 13px', serif;
+    
+}
+.margin{
+    margin: 15rem 0 2.5rem;
+    padding: 0 15rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Slabo 13px', serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Slabo 13px', serif;
+}
+
+
+.parrafo {
+    font-family: 'Slabo 13px', serif;
+}
+
+
+.centrar {
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+}
+
+footer {
+    padding: 1.5rem 2rem;
+    margin-top: 450px;
+    background-color: #bbafb4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__im {
+    display: inline-block;
+    padding: 0 .2rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+}
+.redes__enlaces {
+    display: flex; 
+    justify-content: center;
+}
+.redes__enlaces a {
+    display: inline-block;
+    color: #FFF; 
+    padding: .5rem 1rem;
+    font-size: 3rem;
+}
+.fa-brands {
+    transition: all .5s ease-in-out;
+}
+.redes__enlaces a:hover .fa-brands {
+    transform: scale(1.5) rotate(20deg);
+} 
+.creadores .name {
+    font-weight: bold; 
+    color: #000;
+}
+.footer__div P{
+    margin: 5px;
+
+}
+
+/*Subtitulos*/
+.subtitulo{
+    margin: 20px;
+}
+
+/*Introducciòn*/
+.introduccion{
+    margin-top: 10rem;
+    font-size: 2rem;
+}
+.introduccion .title {
+    font-size: 2.5em; 
+}
+.introduccion .parrafo{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 1;
+}
+.video-container{
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+
+.video-container video{
+    width: 100%;
+    margin-bottom: -45rem;
+}
+
+.video-container{
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+}
+/* Puts the form in the center both horizontally and vertically. Sets its height to 100% of the viewport's height */
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+  /* Style the inputs */
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /* Hide the placeholder texts (a) */
+  
+  ::placeholder {
+    color: transparent;
+  }
+  /* Styling text labels */
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #FFDDD2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #d6cbe1;
+    transform: translateY(-2px);
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ebd3d3;
+  }
+  .input:focus {
+    border: 2px solid #e8d1d1;
+  }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+/* ------ ------ Nosotros ------ ------ */
+.main {
+    height: 100vh;
+    margin-top: 4rem;
+    background-image: url(../img/im-n4.jpg);
+}
+.parallax {
+    background-position: center; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.main__titulo ,
+.parallax__im .main__titulo{
+    font-size: 5rem;
+    -webkit-text-fill-color :transparent;
+    -webkit-text-stroke: 2.5px #000 ;
+}
+
+/* h2.main__titulo:hover {
+    font-size: 5rem;
+    -webkit-text-fill-color :#FFF2DF;
+    -webkit-text-stroke: 2px #000 ;
+}
+ */
+
+ .parallax__im {
+    height: 100vh;
+    margin-top: 4rem;
+    background-image: url(../img/im-n2.jpg);
+    padding: .1px;
+ }
+ .parallax__im .main__titulo--margin {
+    margin-top: 12rem; 
+    font-size: 5rem;
+    -webkit-text-fill-color :#FFF;
+    -webkit-text-stroke: 2.5px #000 ;  
+ }
+
+ .main__titulo:nth-child(2) {
+    margin-top: 0rem; 
+ }
+.main__titulo:nth-child(2) {
+    margin-bottom: 10rem;
+}
+
+.publicidad {
+    height: 8rem;
+    padding: 2rem 0;
+}
+
+.publicidad__titulo {
+    font-size: 2rem; 
+    margin-bottom: .5rem;
+}
+
+.publicidad__bold {
+    font-weight: bolder; 
+}
+
+.intro {
+    text-align: center;
+}
+
+section.publicidad {
+    padding: 2rem 4rem; 
+}
+
+.intro__titulo {
+    font-size: 2rem; 
+    margin-bottom: .5rem;
+}
+
+.intro__parrafo {
+    line-height: 1.5rem; 
+}
+
+/* ------ ------ Cómo comprar ------ ------ */
+.steps {
+    height: 20rem;
+    margin-top: 28rem; 
+    padding: 2rem 5rem;
+    margin-bottom: -27rem;
+
+}
+
+.steps ol {
+    margin: auto; 
+    width: 80%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
